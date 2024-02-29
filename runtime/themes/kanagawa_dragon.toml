@@ -1,0 +1,210 @@
+# Kanagawa Dragon
+# Author: hyblm
+
+# Adaptation of https://github.com/rebelot/kanagawa.nvim
+# Original author: rebelot
+# All credits to the original author, this version tries to be as
+# close to the original as possible. Feel free to report inconsistencies
+# if you find any.
+
+## User interface
+"ui.background" = { fg = "dragonWhite", bg = "dragonBlack3" }
+"ui.background.separator" = "dragonBlack0"
+
+"ui.cursor" = { fg = "dragonBlack0", bg = "oldWhite" }
+# "ui.cursor.normal" = { fg = "waveBlue1", bg = "waveAqua2"}
+# "ui.cursor.insert" = { fg = "waveBlue1", bg = "waveAqua2"}
+# "ui.cursor.select" = { fg = "waveBlue1", bg = "waveAqua2"}
+"ui.cursor.match" = { fg = "roninYellow", modifiers = ["bold"] }
+# "ui.cursor.primary" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.normal" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.insert" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.select" = { fg = "waveBlue1", bg = "fujiWhite" }
+
+# "ui.debug.breakpoint" = ""
+# "ui.debug.active" = ""
+
+"ui.gutter" = { fg = "dragonBlack4" }
+# "ui.gutter.selected" = ""
+
+# "ui.highlight.frameline" = ""
+
+"ui.linenr" = { fg = "dragonBlack6" }
+# "ui.linenr.selected" = { fg = "roninYellow" }
+
+"ui.statusline" = { fg = "oldWhite", bg = "dragonBlack0" }
+# "ui.statusline.inactive" = { fg = "fujiGray", bg = "sumiInk0" }
+# "ui.statusline.normal" = { fg = "sumiInk0", bg = "crystalBlue", modifiers = ["bold"] }
+# "ui.statusline.insert" = { fg = "sumiInk0", bg = "autumnGreen", modifiers = ["bold"] }
+# "ui.statusline.select" = { fg = "sumiInk0", bg = "oniViolet", modifiers = ["bold"] }
+# "ui.statusline.separator" = ""
+
+"ui.popup" = { fg = "oldWhite", bg = "dragonBlack0" }
+# "ui.popup.info" = ""
+"ui.window" = { fg = "dragonBlack0" }
+"ui.help" = { fg = "oldWhite", bg = "dragonBlack0" }
+"ui.text" = "dragonWhite"
+"ui.text.focus" = { fg = "fujiWhite", bg = "waveBlue1", modifiers = ["bold"] }
+# "ui.text.inactive" = ""
+# "ui.text.info" = ""
+
+"ui.virtual" = "dragonBlack4"
+"ui.virtual.ruler" = { bg = "dragonBlack4" }
+"ui.virtual.inlay-hint" = "dragonBlack6"
+# "ui.virtual.inlay-hint.parameter" = { fg = "carpYellow", modifiers = ["dim"] }
+# "ui.virtual.inlay-hint.type" = { fg = "waveAqua2", modifiers = ["dim"] }
+# "ui.virtual.wrap" = ""
+
+"ui.menu" = { fg = "oldWhite", bg = "waveBlue1" }
+"ui.menu.selected" = { fg = "dragonWhite", bg = "waveBlue2", modifiers = ["bold"] }
+# "ui.menu.scroll" = { fg = "oldWhite", bg = "waveBlue1" }
+
+"ui.selection" = { bg = "waveBlue2" }
+"ui.selection.primary" = { bg = "waveBlue1" }
+
+"diagnostic" = { underline = { color = "springGreen", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "waveAqua1", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dragonBlue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "roninYellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "samuraiRed", style = "curl" } }
+
+hint = "waveAqua1"
+info = "dragonBlue"
+warning = "roninYellow"
+error = "samuraiRed"
+
+## Git gutter
+"diff.plus" = "autumnGreen"
+"diff.minus" = "autumnRed"
+"diff.delta" = "autumnYellow"
+
+## Syntax highlighting
+# "attribute" = "waveRed"
+"type" = "dragonAqua"
+"type.enum.variant" = "dragonOrange"
+# "constructor" = "springBlue"
+"constant" = "dragonOrange"
+"constant.numeric" = "dragonPink"
+# "constant.character.escape" = "springBlue"
+"string" = "dragonGreen2"
+"string.regexp" = "dragonRed"
+# "string.special.url" = "springBlue"
+"string.special.symbol" = "dragonViolet"
+"comment" = "dragonAsh"
+# "variable" = "fujiWhite"
+"variable.builtin" = "dragonRed"
+"variable.parameter" = "dragonGray"
+"variable.other.member" = "dragonYellow"
+# "label" = "springBlue"
+"punctuation" = "dragonGray2"
+"keyword" = "dragonViolet"
+"keyword.control.import" = "dragonRed"
+# "keyword.control.return" = "peachRed"
+# "keyword.control.exception" = "peachRed"
+# "keyword.directive" = "peachRed"
+"keyword.storage.modifier" = "dragonAqua"
+"operator" = "dragonRed"
+"function" = "dragonBlue2"
+# "function.builtin" = "springBlue"
+"function.macro" = "dragonRed"
+"function.special" = "dragonRed"
+# "tag" = "waveAqua2"
+# "namespace" = "surimiOrange"
+"special" = "dragonRed"
+
+"ui.cursorline.primary" = { bg = "dragonBlack5"}
+"ui.cursorcolumn.primary" = { bg = "dragonBlack5" }
+
+"ui.highlight" = { fg = "fujiWhite", bg = "waveBlue2" }
+
+
+## Markup modifiers
+"markup.heading.marker" = "springViolet2"
+"markup.heading.1" = { fg = "surimiOrange", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "carpYellow", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "waveAqua2", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "lightBlue", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "oniViolet", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "springViolet1", modifiers = ["bold"] }
+"markup.list.numbered" = "sakuraPink"
+"markup.list.unnumbered" = "waveRed"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = "crystalBlue"
+"markup.link.url" = { fg = "springBlue", underline.style = "line" }
+"markup.link.label" = "surimiOrange"
+"markup.quote" = "springViolet1"
+"markup.raw" = "springGreen"
+
+[palette]
+seaFoam       = "#C7CCD1" # custom lighter foreground
+fujiWhite     = "#DCD7BA" # default foreground
+oldWhite      = "#C8C093" # dark foreground, e.g. statuslines
+sumiInk0      = "#16161D" # dark background, e.g. statuslines, floating windows
+sumiInk1      = "#1F1F28" # default background
+sumiInk2      = "#2A2A37" # lighter background, e.g. colorcolumns, folds
+sumiInk3      = "#363646" # lighter background, e.g. cursorline
+sumiInk4      = "#54546D" # darker foreground, e.g. linenumbers, fold column
+waveBlue1     = "#223249" # popup background, visual selection background
+waveBlue2     = "#2D4F67" # popup selection background, search background
+winterGreen   = "#2B3328" # diff add background
+winterYellow  = "#49443C" # diff change background
+winterRed     = "#43242B" # diff deleted background
+winterBlue    = "#252535" # diff line background
+autumnGreen   = "#76946A" # git add
+autumnRed     = "#C34043" # git delete
+autumnYellow  = "#DCA561" # git change
+samuraiRed    = "#E82424" # diagnostic error
+roninYellow   = "#FF9E3B" # diagnostic warning
+waveAqua1     = "#6A9589" # diagnostic info
+fujiGray      = "#727169" # comments
+springViolet1 = "#938AA9" # light foreground
+oniViolet     = "#957FB8" # statements and keywords
+crystalBlue   = "#7E9CD8" # functions and titles
+springViolet2 = "#9CABCA" # brackets and punctuation
+springBlue    = "#7FB4CA" # specials and builtins
+lightBlue     = "#A3D4D5" # not used!
+waveAqua2     = "#7AA89F" # types
+springGreen   = "#98BB6C" # strings
+boatYellow1   = "#938056" # not used
+boatYellow2   = "#C0A36E" # operators, regex
+carpYellow    = "#E6C384" # identifiers
+sakuraPink    = "#D27E99" # numbers
+waveRed       = "#E46876" # standout specials 1, e.g. builtin variables
+peachRed      = "#FF5D62" # standout specials 2, e.g. exception handling, returns
+surimiOrange  = "#FFA066" # constants, imports, booleans
+katanaGray    = "#717C7C" # deprecated
+
+
+
+
+
+
+
+
+dragonBlue = "#658594"
+dragonBlack0 = "#0d0c0c"
+dragonBlack1 = "#12120f"
+dragonBlack2 = "#1D1C19"
+dragonBlack3 = "#181616"
+dragonBlack4 = "#282727"
+dragonBlack5 = "#393836"
+dragonBlack6 = "#625e5a"
+
+dragonWhite = "#c5c9c5"
+dragonGreen = "#87a987"
+dragonGreen2 = "#8a9a7b"
+dragonPink = "#a292a3"
+dragonOrange = "#b6927b"
+dragonOrange2 = "#b98d7b"
+dragonGray = "#a6a69c"
+dragonGray2 = "#9e9b93"
+dragonGray3 = "#7a8382"
+dragonBlue2 = "#8ba4b0"
+dragonViolet= "#8992a7"
+dragonRed = "#c4746e"
+dragonAqua = "#8ea4a2"
+dragonAsh = "#737c73"
+dragonTeal = "#949fb5"
+dragonYellow = "#c4b28a"  # "#a99c8b"

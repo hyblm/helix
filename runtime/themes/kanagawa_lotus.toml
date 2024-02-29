@@ -1,0 +1,224 @@
+# Kanagawa Dragon
+# Author: hyblm
+
+# Adaptation of https://github.com/rebelot/kanagawa.nvim
+# Original author: rebelot
+# All credits to the original author, this version tries to be as
+# close to the original as possible. Feel free to report inconsistencies
+# if you find any.
+
+## User interface
+"ui.background" = { fg = "lotusInk1", bg = "lotusWhite3" }
+"ui.background.separator" = "lotusInk0"
+
+"ui.cursor" = { fg = "lotusInk1", bg = "lotusWhite0" }
+# "ui.cursor.normal" = { fg = "waveBlue1", bg = "waveAqua2"}
+# "ui.cursor.insert" = { fg = "waveBlue1", bg = "waveAqua2"}
+# "ui.cursor.select" = { fg = "waveBlue1", bg = "waveAqua2"}
+"ui.cursor.match" = { fg = "roninYellow", modifiers = ["bold"] }
+# "ui.cursor.primary" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.normal" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.insert" = { fg = "waveBlue1", bg = "fujiWhite" }
+# "ui.cursor.primary.select" = { fg = "waveBlue1", bg = "fujiWhite" }
+
+# "ui.debug.breakpoint" = ""
+# "ui.debug.active" = ""
+
+"ui.gutter" = { bg = "lotusWhite4" }
+# "ui.gutter.selected" = ""
+
+# "ui.highlight.frameline" = ""
+
+"ui.linenr" = { fg = "lotusViolet1" }
+"ui.linenr.selected" = { fg = "roninYellow" }
+
+"ui.statusline" = { fg = "lotusInk1", bg = "lotusWhite0" }
+# "ui.statusline.inactive" = { fg = "fujiGray", bg = "sumiInk0" }
+# "ui.statusline.normal" = { fg = "sumiInk0", bg = "crystalBlue", modifiers = ["bold"] }
+# "ui.statusline.insert" = { fg = "sumiInk0", bg = "autumnGreen", modifiers = ["bold"] }
+# "ui.statusline.select" = { fg = "sumiInk0", bg = "oniViolet", modifiers = ["bold"] }
+# "ui.statusline.separator" = ""
+
+"ui.popup" = { fg = "lotusInk2", bg = "lotusWhite0" }
+# "ui.popup.info" = ""
+"ui.window" = { fg = "dragonBlack0" }
+"ui.help" = { fg = "oldWhite", bg = "dragonBlack0" }
+"ui.text" = "dragonWhite"
+"ui.text.focus" = { fg = "fujiWhite", bg = "waveBlue1", modifiers = ["bold"] }
+# "ui.text.inactive" = ""
+# "ui.text.info" = ""
+
+"ui.virtual" = "lotusWhite4"
+"ui.virtual.ruler" = { bg = "lotusWhite4" }
+"ui.virtual.inlay-hint" = "lotusViolet1"
+# "ui.virtual.inlay-hint.parameter" = { fg = "carpYellow", modifiers = ["dim"] }
+# "ui.virtual.inlay-hint.type" = { fg = "waveAqua2", modifiers = ["dim"] }
+# "ui.virtual.wrap" = ""
+
+"ui.menu" = { fg = "lotusInk2", bg = "lotusBlue2" }
+"ui.menu.selected" = { fg = "lotusInk1", bg = "lotusBlue3", modifiers = ["bold"] }
+# "ui.menu.scroll" = { fg = "oldWhite", bg = "waveBlue1" }
+
+"ui.selection" = { bg = "lotusViolet2" }
+"ui.selection.primary" = { bg = "lotusViolet3" }
+
+"diagnostic" = { underline = { color = "springGreen", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "waveAqua1", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dragonBlue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "roninYellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "samuraiRed", style = "curl" } }
+
+hint = "waveAqua1"
+info = "dragonBlue"
+warning = "roninYellow"
+error = "samuraiRed"
+
+## Git gutter
+"diff.plus" = "autumnGreen"
+"diff.minus" = "autumnRed"
+"diff.delta" = "autumnYellow"
+
+## Syntax highlighting
+# "attribute" = "waveRed"
+"type" = "lotusAqua"
+"type.enum.variant" = "lotusOrange"
+# "constructor" = "springBlue"
+"constant" = "lotusOrange"
+"constant.numeric" = "lotusPink"
+# "constant.character.escape" = "springBlue"
+"string" = "lotusGreen"
+"string.regexp" = "lotusYellow2"
+# "string.special.url" = "springBlue"
+"string.special.symbol" = "lotusViolet4"
+"comment" = "lotusGray3"
+# "variable" = ""
+"variable.builtin" = "lotusRed"
+"variable.parameter" = "lotusBlue5"
+"variable.other.member" = "lotusYellow"
+# "label" = "springBlue"
+"punctuation" = "lotusTeal1"
+"keyword" = "lotusViolet4"
+"keyword.control.import" = "lotusRed"
+# "keyword.control.return" = "peachRed"
+# "keyword.control.exception" = "peachRed"
+# "keyword.directive" = "peachRed"
+"keyword.storage.modifier" = "lotusAqua"
+"operator" = "lotusYellow2"
+"function" = "lotusBlue4"
+# "function.builtin" = "springBlue"
+"function.macro" = "lotusRed"
+"function.special" = "lotusRed"
+# "tag" = "waveAqua2"
+# "namespace" = "surimiOrange"
+"special" = "lotusRed"
+
+"ui.cursorline.primary" = { bg = "lotusWhite5"}
+"ui.cursorcolumn.primary" = { bg = "dragonBlack5" }
+
+"ui.highlight" = { fg = "fujiWhite", bg = "waveBlue2" }
+
+
+## Markup modifiers
+"markup.heading.marker" = "springViolet2"
+"markup.heading.1" = { fg = "surimiOrange", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "carpYellow", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "waveAqua2", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "lightBlue", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "oniViolet", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "springViolet1", modifiers = ["bold"] }
+"markup.list.numbered" = "sakuraPink"
+"markup.list.unnumbered" = "waveRed"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = "crystalBlue"
+"markup.link.url" = { fg = "springBlue", underline.style = "line" }
+"markup.link.label" = "surimiOrange"
+"markup.quote" = "springViolet1"
+"markup.raw" = "springGreen"
+
+[palette]
+seaFoam       = "#C7CCD1" # custom lighter foreground
+fujiWhite     = "#DCD7BA" # default foreground
+oldWhite      = "#C8C093" # dark foreground, e.g. statuslines
+sumiInk0      = "#16161D" # dark background, e.g. statuslines, floating windows
+sumiInk1      = "#1F1F28" # default background
+sumiInk2      = "#2A2A37" # lighter background, e.g. colorcolumns, folds
+sumiInk3      = "#363646" # lighter background, e.g. cursorline
+sumiInk4      = "#54546D" # darker foreground, e.g. linenumbers, fold column
+waveBlue1     = "#223249" # popup background, visual selection background
+waveBlue2     = "#2D4F67" # popup selection background, search background
+winterGreen   = "#2B3328" # diff add background
+winterYellow  = "#49443C" # diff change background
+winterRed     = "#43242B" # diff deleted background
+winterBlue    = "#252535" # diff line background
+autumnGreen   = "#76946A" # git add
+autumnRed     = "#C34043" # git delete
+autumnYellow  = "#DCA561" # git change
+samuraiRed    = "#E82424" # diagnostic error
+roninYellow   = "#FF9E3B" # diagnostic warning
+waveAqua1     = "#6A9589" # diagnostic info
+fujiGray      = "#727169" # comments
+springViolet1 = "#938AA9" # light foreground
+oniViolet     = "#957FB8" # statements and keywords
+crystalBlue   = "#7E9CD8" # functions and titles
+springViolet2 = "#9CABCA" # brackets and punctuation
+springBlue    = "#7FB4CA" # specials and builtins
+lightBlue     = "#A3D4D5" # not used!
+waveAqua2     = "#7AA89F" # types
+springGreen   = "#98BB6C" # strings
+boatYellow1   = "#938056" # not used
+boatYellow2   = "#C0A36E" # operators, regex
+carpYellow    = "#E6C384" # identifiers
+sakuraPink    = "#D27E99" # numbers
+waveRed       = "#E46876" # standout specials 1, e.g. builtin variables
+peachRed      = "#FF5D62" # standout specials 2, e.g. exception handling, returns
+surimiOrange  = "#FFA066" # constants, imports, booleans
+katanaGray    = "#717C7C" # deprecated
+
+
+
+
+
+
+
+lotusInk1 = "#545464"
+lotusInk2 = "#43436c"
+lotusGray = "#dcd7ba"
+lotusGray2 = "#716e61"
+lotusGray3 = "#8a8980"
+lotusWhite0 = "#d5cea3"
+lotusWhite1 = "#dcd5ac"
+lotusWhite2 = "#e5ddb0"
+lotusWhite3 = "#f2ecbc"
+lotusWhite4 = "#e7dba0"
+lotusWhite5 = "#e4d794"
+lotusViolet1 = "#a09cac"
+lotusViolet2 = "#766b90"
+lotusViolet3 = "#c9cbd1"
+lotusViolet4 = "#624c83"
+lotusBlue1 = "#c7d7e0"
+lotusBlue2 = "#b5cbd2"
+lotusBlue3 = "#9fb5c9"
+lotusBlue4 = "#4d699b"
+lotusBlue5 = "#5d57a3"
+lotusGreen = "#6f894e"
+lotusGreen2 = "#6e915f"
+lotusGreen3 = "#b7d0ae"
+lotusPink = "#b35b79"
+lotusOrange = "#cc6d00"
+lotusOrange2 = "#e98a00"
+lotusYellow ="#77713f"
+lotusYellow2 = "#836f4a"
+lotusYellow3 = "#de9800"
+lotusYellow4 = "#f9d791"
+lotusRed = "#c84053"
+lotusRed2 = "#d7474b"
+lotusRed3 = "#e82424"
+lotusRed4 = "#d9a594"
+lotusAqua = "#597b75"
+lotusAqua2 = "#5e857a"
+lotusTeal1 = "#4e8ca2"
+lotusTeal2 = "#6693bf"
+lotusTeal3 = "#5a7785"
+lotusCyan = "#d7e3d8"
